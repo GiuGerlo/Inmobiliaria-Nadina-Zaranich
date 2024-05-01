@@ -6,12 +6,23 @@
 }
 
 // COLORES
-    $color1: #05172D;
-    $color2: #FCF2CB;
+    $color1: #061D37;
+    $color2: #0A305C;
+    $color3: #4C6D9F;
+    $color4: #8A97BC;
+    $color5: #FCF2CB;
+
+//FUENTES
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Platypi:ital,wght@0,300..800;1,300..800&family=Questrial&display=swap');
+
+    $font1: "Platypi", serif; //Platypi CUERPO
+    $font2: "Crimson Text", serif; // Crimson TITULOS weight 400 italic
+    $font3: "Questrial", sans-serif; // Questrial HEADER Y FOOTER weight 400
+    
 
 // HEADER
 .navbar{
-    background-color: grey;
+    background-color: $color2;
     display: flex;
     justify-content: space-between;
     padding: 5px;
@@ -24,14 +35,21 @@
     font-size: 20px;
 
         .nav-link{
-            color: $color2;
+            color: $color5;
+            font-family: $font3;
+            font-weight: 400;
             padding-left: 7px;         
         }
 }
 
+//MAIN
+
 //FOOTER
 footer{
-    background-color: rgb(195, 185, 185);
+    background-color: $color2;
+    color: $color5;
+    font-family: $font3;
+    font-weight: 400;
 }
 
 /* MEDIAQUERIES */

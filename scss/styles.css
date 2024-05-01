@@ -1,4 +1,5 @@
 /* RESETEO UNIVERSAL */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Platypi:ital,wght@0,300..800;1,300..800&family=Questrial&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +7,7 @@
 }
 
 .navbar {
-  background-color: grey;
+  background-color: #0A305C;
   display: flex;
   justify-content: space-between;
   padding: 5px;
@@ -20,11 +21,16 @@
 }
 .navbar .nav-link {
   color: #FCF2CB;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
   padding-left: 7px;
 }
 
 footer {
-  background-color: rgb(195, 185, 185);
+  background-color: #0A305C;
+  color: #FCF2CB;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
 }
 
 /* MEDIAQUERIES */
