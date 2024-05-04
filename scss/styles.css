@@ -46,6 +46,13 @@ main {
 }
 
 /*BOTONERA*/
+.botonera-home {
+  background-color: red;
+}
+.botonera-home .ul-botonera-home {
+  list-style: none;
+}
+
 footer {
   background-color: #0A305C;
   color: #FCF2CB;
