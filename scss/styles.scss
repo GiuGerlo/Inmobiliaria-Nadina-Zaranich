@@ -66,7 +66,12 @@ main{
 /*BOTONERA*/
 .botonera-home{
     background-color: $color1;
-    padding: 10px;
+    padding: 20px;
+    padding-bottom: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    max-width: none;
 
     .ul-botonera-home{
         list-style: none;
@@ -84,10 +89,39 @@ main{
 }
 
 .ul-botonera-home img{
-    width: 50px;
+    width: 65px;
 }
 
+/*PROPIEDADES DESTACADAS*/
 
+.propiedades-destacadas{
+    color: $color3;
+    padding: 20px;
+    font-family: $font2;
+}
+
+.card {
+    position: relative;
+    /* Estilos para la tarjeta */
+    transition: transform 0.3s ease; /* Transición suave */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de escala al hacer hover */
+}
+
+.btn-contacto {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.card:hover .btn-contacto {
+    opacity: 1; /* Visible al hacer hover */
+}
 
 
 //FOOTER
