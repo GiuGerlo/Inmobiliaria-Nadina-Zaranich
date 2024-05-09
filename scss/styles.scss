@@ -94,7 +94,7 @@ main{
 
 /*PROPIEDADES DESTACADAS*/
 
-.propiedades-destacadas{
+.propiedades-destacadas {
     color: $color3;
     padding: 20px;
     font-family: $font2;
@@ -102,27 +102,48 @@ main{
 
 .card {
     position: relative;
-    /* Estilos para la tarjeta */
-    transition: transform 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
+    margin-bottom: 100px;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Efecto de escala al hacer hover */
+    transform: scale(1.05);
+    opacity: 1;
 }
 
-.btn-contacto {
+.card-body{
+    padding: 10px;
+}
+
+.card-body ul{
+    list-style: none;
+}
+
+.btn-card {
     position: absolute;
     bottom: 10px;
-    left: 10px;
-    opacity: 0; /* Inicialmente invisible */
-    transition: opacity 0.3s ease; /* Transición suave */
+    right: 10px;
+    bottom: 10px;
+    opacity: 0; 
 }
 
-.card:hover .btn-contacto {
-    opacity: 1; /* Visible al hacer hover */
+.card-info {
+    opacity: 0; 
 }
 
+.card:hover .btn-card,
+.card:hover .card-info {
+    opacity: 1;
+}
+
+//ENCONTRANOS
+.mapa-home{
+    background-color: $color4;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0 20px 0px;
+}
 
 //FOOTER
 footer{
