@@ -12,11 +12,30 @@
     $color4: #8A97BC;
     $color5: #FCF2CB;
 
+    /*TAMAÑOS DE FUENTES*/
+    /*H1*/
+    $fsizeh1: 45px;
+    $fsizeh1-md: 70px;
+    /*H2*/
+    $fsizeh2: 30px;
+    $fsizeh2-md: 40px;
+    /*P*/
+    $fsizep: 18px;
+    $fsizep-md: 22px;
+    /*LINKS NAV*/
+    $fsizenav: 20px;
+    $fsizenav-md: 22px;
+    /*TITLE CARD*/
+    $fsizecard: 22px;
+    $fsizecard-md: 28px;
+    /*BUTTON*/
+    $fsizebtn:22px;
+
 //FUENTES
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Platypi:ital,wght@0,300..800;1,300..800&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins&family=Questrial&display=swap');
 
     $font1: "Platypi", serif; //Platypi CUERPO
-    $font2: "Crimson Text", serif; // Crimson TITULOS weight 400 italic
+    $font2: "Poppins", sans-serif; // Poppins Titulos
     $font3: "Questrial", sans-serif; // Questrial HEADER Y FOOTER weight 400
     
 
@@ -31,8 +50,8 @@
     width: 100%;
     min-height: 80px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: $font3;
+    font-size: $fsizenav;
 
         .nav-link{
             color: $color5;
@@ -47,18 +66,36 @@
 main{
     background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
     background-blend-mode: normal, lighten, soft-light;
+        p, li, a{
+            font-size: $fsizep;
+            font-family: $font1;
+        }
+        h2, h4{
+            font-size: $fsizeh2;
+            font-family: $font2;
+        }
+        h3{
+            font-size: $fsizecard;
+            font-family: $font2;
+        }
+
 }
 
 /*CALL TO ACTION*/
 .cta-home{
     background-color: $color4;
     font-family: $font1;
+        h1{
+            font-size: $fsizeh1;
+        }
+
         .btn-cta-home{
             background-color: $color2;
             color: $color5;
                 a{
                     text-decoration: none;
                     color: $color5;
+                    font-size: 22px;
                 }
         }
 }
@@ -104,7 +141,7 @@ main{
     position: relative;
     transition: transform 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .card:hover {
@@ -143,6 +180,10 @@ main{
     text-align: center;
     width: 100%;
     padding: 20px 0 20px 0px;
+    max-width: 100%;
+        iframe{
+            width: 100%;
+        }
 }
 
 //FOOTER
