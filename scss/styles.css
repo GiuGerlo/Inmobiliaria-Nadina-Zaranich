@@ -27,11 +27,32 @@
   font-family: "Questrial", sans-serif;
   font-size: 20px;
 }
+.navbar .navbar-nav a {
+  position: relative;
+}
+.navbar .navbar-nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.navbar .navbar-nav a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.navbar .navbar-nav a:hover {
+  color: black;
+}
 .navbar .nav-link {
   color: #FCF2CB;
   font-family: "Questrial", sans-serif;
-  font-weight: 400;
-  padding-left: 7px;
 }
 
 main {
@@ -82,6 +103,9 @@ main h3 {
 .botonera-home .ul-botonera-home {
   list-style: none;
   padding-left: 0;
+}
+.botonera-home .ul-botonera-home a:hover {
+  transform: scale(1.2);
 }
 
 .ul-botonera-home a {
@@ -207,7 +231,7 @@ footer .redes a {
   align-items: baseline;
 }
 footer .redes i:hover {
-  transform: scale(1.3);
+  transform: scale(1.15);
 }
 
 /* MEDIAQUERIES */
