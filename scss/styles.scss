@@ -31,6 +31,10 @@
     $fsizecard-md: 28px;
     /*BUTTON*/
     $fsizebtn:22px;
+    /*FOOTER-TOP*/
+    $ffootertop: 12px;
+    $ffootertop-md: 14px;
+
 
 //FUENTES
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins&family=Questrial&display=swap');
@@ -243,7 +247,7 @@ main{
     background-color: $color4;
     text-align: center;
     width: 100%;
-    padding: 20px 0 20px 0px;
+    padding: 20px 0 0px 0px;
     max-width: 100%;
         h4{
             text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd, 2px 2px 2px rgba(206,89,55,0);
@@ -257,11 +261,33 @@ main{
 .footer-top{
     display: flex;
     justify-content: center;
+    align-items: center;
 
-        li{
+        .contacto-footer-top li{
             list-style: none;
-            font-size: 12px;
             text-align: justify;
+            font-size: $ffootertop;
+        }
+
+        .fa-instagram {
+            font-size: 30px;
+            color: #e4405f; 
+            height: 50px; 
+            width: 50px; 
+            border-radius: 50%;
+            background-color: #f8f8f8;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease; 
+            line-height: 1.7;
+        }
+
+            .fa-instagram:hover {
+                background-color: #e4405f; 
+                color: white;
+            }
+        
+        .footer-top-p{
+            font-size: $ffootertop;
         }
 
 }
@@ -276,14 +302,42 @@ footer{
         .redes a {
             color: $color5;
             text-decoration: none;
-            font-size: 35px ;
+            font-size: 30px ;
             align-items: baseline;
         }
 
         .redes i:hover{
             transform: scale(1.15);
         }
+
+        .invisible{
+            visibility: hidden;
+        }
 }
+
+/*BOTON WHATSAPP*/
+
+.whatsapp {
+    height: 50px; 
+    width: 50px; 
+    background-color: #4cc85a99; 
+    color: black; 
+    text-decoration: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    text-align: center;
+    font-size: 30px; 
+    line-height: 50px; 
+    border-radius: 50%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease; 
+}
+
+.whatsapp:hover {
+    background-color: #128c7e; 
+}
+
 
 /* MEDIAQUERIES */
 @media only screen and (min-width: 768px){
@@ -294,4 +348,18 @@ footer{
         display: flex;
         justify-content: end;
     }
+
+    /*ENCONTRANOS*/
+.footer-top{
+
+        .contacto-footer-top li{
+            font-size: $ffootertop-md;
+        }
+
+        .footer-top-p{
+            font-size: $ffootertop-md;
+        }
+
+}
+
 }

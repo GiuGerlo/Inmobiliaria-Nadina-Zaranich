@@ -14,6 +14,7 @@
 /*LINKS NAV*/
 /*TITLE CARD*/
 /*BUTTON*/
+/*FOOTER-TOP*/
 .navbar {
   background-color: #0A305C;
   display: flex;
@@ -197,7 +198,7 @@ main h3 {
   background-color: #8A97BC;
   text-align: center;
   width: 100%;
-  padding: 20px 0 20px 0px;
+  padding: 20px 0 0px 0px;
   max-width: 100%;
 }
 .mapa-home h4 {
@@ -211,11 +212,30 @@ main h3 {
 .footer-top {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.footer-top li {
+.footer-top .contacto-footer-top li {
   list-style: none;
-  font-size: 12px;
   text-align: justify;
+  font-size: 12px;
+}
+.footer-top .fa-instagram {
+  font-size: 30px;
+  color: #e4405f;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  line-height: 1.7;
+}
+.footer-top .fa-instagram:hover {
+  background-color: #e4405f;
+  color: white;
+}
+.footer-top .footer-top-p {
+  font-size: 12px;
 }
 
 footer {
@@ -227,11 +247,36 @@ footer {
 footer .redes a {
   color: #FCF2CB;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 30px;
   align-items: baseline;
 }
 footer .redes i:hover {
   transform: scale(1.15);
+}
+footer .invisible {
+  visibility: hidden;
+}
+
+/*BOTON WHATSAPP*/
+.whatsapp {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(76, 200, 90, 0.6);
+  color: black;
+  text-decoration: none;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp:hover {
+  background-color: #128c7e;
 }
 
 /* MEDIAQUERIES */
@@ -240,5 +285,12 @@ footer .redes i:hover {
   .collapse {
     display: flex;
     justify-content: end;
+  }
+  /*ENCONTRANOS*/
+  .footer-top .contacto-footer-top li {
+    font-size: 14px;
+  }
+  .footer-top .footer-top-p {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=styles.css.map */
