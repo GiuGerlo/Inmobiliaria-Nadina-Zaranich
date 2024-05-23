@@ -169,12 +169,12 @@ footer {
   background-color: #0A305C;
   color: #FCF2CB;
   font-family: "Questrial", sans-serif;
-  font-size: 18px;
+  font-size: 12px;
 }
 footer .redes a {
   color: #FCF2CB;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   align-items: baseline;
 }
 footer .redes i:hover {
@@ -209,7 +209,7 @@ footer .invisible {
 /*PROPIEDADES*/
 .tarjetas {
   color: #4C6D9F;
-  padding: 20px;
+  padding: 15px;
   font-family: "Poppins", sans-serif;
 }
 .tarjetas h2 {
@@ -285,6 +285,12 @@ footer .invisible {
   .collapse {
     display: flex;
     justify-content: end;
+  }
+  footer {
+    font-size: 18px;
+  }
+  footer .redes a {
+    font-size: 30px;
   }
   /*ENCONTRANOS*/
   .footer-top .contacto-footer-top li {

@@ -221,12 +221,12 @@ footer{
     background-color: $color2;
     color: $color5;
     font-family: $font3;
-    font-size: $fsizep;
+    font-size: $ffootertop;
 
         .redes a {
             color: $color5;
             text-decoration: none;
-            font-size: 30px ;
+            font-size: 20px ;
             align-items: baseline;
         }
 
@@ -266,7 +266,7 @@ footer{
 
 .tarjetas {
     color: $color3;
-    padding: 20px;
+    padding: 15px;
     font-family: $font2;
         h2{
             color: $color2;
@@ -346,6 +346,14 @@ footer{
     .collapse{
         display: flex;
         justify-content: end;
+    }
+
+    footer{
+        font-size: $fsizep;
+
+            .redes a {
+                font-size: 30px ;
+            }
     }
 
     /*ENCONTRANOS*/
