@@ -60,6 +60,10 @@ main {
   background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
   background-blend-mode: normal, lighten, soft-light;
 }
+main h1 {
+  font-size: 45px;
+  font-family: "Platypi", serif;
+}
 main p, main li, main a {
   font-size: 18px;
   font-family: "Platypi", serif;
@@ -219,10 +223,11 @@ footer .invisible {
 }
 
 .card {
+  width: 100%;
   position: relative;
   transition: transform 0.3s ease, opacity 0.3s ease;
   cursor: pointer;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .card-title {
@@ -241,6 +246,12 @@ footer .invisible {
 
 .card-body ul {
   list-style: none;
+  padding: 10px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
 }
 
 .btn-card {
@@ -249,6 +260,7 @@ footer .invisible {
   right: 10px;
   bottom: 10px;
   opacity: 0;
+  padding: 10px;
 }
 
 .btn-grad {
@@ -277,6 +289,22 @@ footer .invisible {
 .card:hover .btn-card,
 .card:hover .card-info {
   opacity: 1;
+}
+
+/*INDIVIDUALES*/
+.responsive-map {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  position: relative;
+}
+
+.responsive-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* MEDIAQUERIES */
