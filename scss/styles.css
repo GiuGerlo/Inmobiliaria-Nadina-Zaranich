@@ -230,6 +230,7 @@ footer .invisible {
   transition: transform 0.3s ease, opacity 0.3s ease;
   cursor: pointer;
   margin-bottom: 50px;
+  background-color: #0A305C;
 }
 
 .card-title {
@@ -240,6 +241,7 @@ footer .invisible {
 .card:hover {
   transform: scale(1.05);
   opacity: 1;
+  background-color: white;
 }
 
 .card-body {
