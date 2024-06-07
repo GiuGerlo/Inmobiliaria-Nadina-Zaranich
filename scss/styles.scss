@@ -374,6 +374,15 @@ footer{
     height: 100%;
 }
 
+/*CONTACTO*/
+.btn-form{
+    background-color: $color2;
+}
+    .btn-form:hover{
+        background-color: $color3;
+    }
+
+
 /* MEDIAQUERIES */
 @media only screen and (min-width: 768px){
     
