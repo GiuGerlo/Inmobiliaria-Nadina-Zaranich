@@ -97,6 +97,11 @@ main h3 {
   font-size: 22px;
 }
 
+.cta-home-2 {
+  background-color: #0A305C;
+  font-family: "Platypi", serif;
+}
+
 /*BOTONERA*/
 .botonera-home {
   background-color: #061D37;
@@ -322,6 +327,12 @@ footer .invisible {
 
 .btn-form:hover {
   background-color: #4C6D9F;
+}
+
+/*SPAN*/
+span {
+  font-weight: bold;
+  color: #FCF2CB;
 }
 
 /* MEDIAQUERIES */
