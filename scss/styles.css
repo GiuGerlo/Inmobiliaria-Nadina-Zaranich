@@ -102,6 +102,10 @@ main h3 {
   font-family: "Platypi", serif;
 }
 
+.presentacion {
+  text-align: justify;
+}
+
 /*BOTONERA*/
 .botonera-home {
   background-color: #061D37;
